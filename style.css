@@ -24,6 +24,7 @@
 
 .banner-text h1 {
   font-size: 130px;
+  font-family: kaushan script, cursive;
 }
 
 .banner-text p {
@@ -105,4 +106,47 @@ nav ul li a {
   margin-top: 15px;
 }
 @media screen and (max-width: 770px) {
+  .banner-text h1 {
+    font-size: 44px;
+  }
+  .banner-btn a {
+    display: block;
+    margin: 20px auto;
+  }
+}
+/* feature */
+
+#feature {
+  width: 100%;
+  padding: 70px 0;
+}
+.title-text {
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.title-text p {
+  margin: auto;
+  font-size: 20px;
+  color: #009688;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+.title-text p::after {
+  content: "";
+  width: 50px;
+  height: 35px;
+  background: linear-gradient(#019587, #fff);
+  position: absolute;
+  top: -20px;
+  left: 0;
+  z-index: -1;
+  transform: rotate(10deg);
+}
+
+.title-text h1 {
+  font-size: 50px;
 }
